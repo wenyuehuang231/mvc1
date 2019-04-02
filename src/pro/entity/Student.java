@@ -43,6 +43,13 @@ public class Student implements Serializable {
         this.teacher = teacher;
     }
 
+    public Student(String name, String addr, int age, List<Teacher> teacher) {
+        this.name = name;
+        this.addr = addr;
+        this.age = age;
+        this.teacher = teacher;
+    }
+
     @Override
     public String toString() {
         return "Student{" +

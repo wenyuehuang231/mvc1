@@ -3,13 +3,23 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="stu" class="entity.Student">
+    <!--<bean id="stu" class="entity.Student">
         <property name="teacher" ref="tea"></property>
+    </bean>-->
+
+    <bean id="stu1" class="factory.StaticStudentFactory" factory-method="getStu">
+        <constructor-arg value="1"></constructor-arg>
+    </bean>
+
+    <bean id="studentFactory" class="factory.InstanceStudentFactory"></bean>
+    <bean id="stu2" factory-bean="studentFactory" factory-method="getStu">
+        <constructor-arg value="1"></constructor-arg>
     </bean>
 
     <bean id="tea" class="entity.Teacher">
         <property name="tage" value="11"></property>
         <property name="tname" value="小绿"></property>
     </bean>
+
 
 </beans>
