@@ -5,15 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.yue</groupId>
-  <artifactId>mvc1</artifactId>
+  <artifactId>springmvc2</artifactId>
   <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>springmvc1</module>
-      <module>myspringmvc</module>
-    </modules>
-    <packaging>pom</packaging>
+  <packaging>war</packaging>
 
-  <name>mvc1 Maven Webapp</name>
+  <name>springmvc2 Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -33,19 +29,13 @@
 
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>3.2.17.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>3.2.17.RELEASE</version>
+      <version>4.3.1.RELEASE</version>
     </dependency>
-
   </dependencies>
 
   <build>
-    <finalName>mvc1</finalName>
+    <finalName>springmvc2</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
